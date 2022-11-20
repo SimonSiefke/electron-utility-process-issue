@@ -1,0 +1,23 @@
+{
+  "name": "electron-utility-process-issue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "dev": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SimonSiefke/electron-utility-process-issue.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SimonSiefke/electron-utility-process-issue/issues"
+  },
+  "homepage": "https://github.com/SimonSiefke/electron-utility-process-issue#readme",
+  "dependencies": {
+    "electron": "^22.0.0-beta.6"
+  }
+}
