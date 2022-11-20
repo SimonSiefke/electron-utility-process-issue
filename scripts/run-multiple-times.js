@@ -1,31 +1,7 @@
 const { spawn } = require("node:child_process");
 const { join } = require("node:path");
 
-const getElectronName = () => {
-  switch (process.platform) {
-    case "win32":
-      return "electron.exe";
-    case "darwin":
-      return "";
-    default:
-      return "electron";
-  }
-};
-
-const getElectronPath = () => {
-  const electronName = getElectronName();
-  return join(
-    __dirname,
-    "..",
-    "node_modules",
-    "electron",
-    "dist",
-    electronName
-  );
-};
-
 const main = async () => {
-  const electronPath = getElectronPath();
   const root = join(__dirname, "..");
   for (let i = 0; i < 1000; i++) {
     const child = spawn("npm", ["run", "dev", root]);
